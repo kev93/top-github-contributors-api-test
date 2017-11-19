@@ -44,15 +44,13 @@ public final class GitHubApiContributorRepository implements ContributorReposito
         String order
     ) {
         String query = buildQueryFromCriteria(criteria);
-        StringBuilder wholeQuery = new StringBuilder(USERS_ENDPOINT);
-        wholeQuery.append(query);
-        wholeQuery.append("&sort=" + sortBy);
-        wholeQuery.append("&order=" + order);
-        wholeQuery.append("&per_page=" + maxResults.toString());
+        StringBuilder wholeUrl = new StringBuilder(USERS_ENDPOINT);
+        wholeUrl.append(query);
+        wholeUrl.append("&sort=" + sortBy);
+        wholeUrl.append("&order=" + order);
+        wholeUrl.append("&per_page=" + maxResults.toString());
 
-        System.out.println(wholeQuery.toString());
-
-        return wholeQuery.toString();
+        return wholeUrl.toString();
     }
 
     private String buildQueryFromCriteria(Map<String, Entry<String, String>> criteria) {

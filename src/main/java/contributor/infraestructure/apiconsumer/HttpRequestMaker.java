@@ -49,7 +49,7 @@ public class HttpRequestMaker {
 
             return response.toString();
         } catch (IOException e) {
-            throw new ResponseContentCanNotBeReadException(e);
+            throw new ResponseContentCanNotBeReadException("Response body can not be read");
         }
     }
 }

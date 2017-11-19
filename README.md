@@ -19,10 +19,11 @@ sorting them by the number of repositories, then we can add query params as show
 Project compilation by executing:
 `gradle build`
 
-Run the project by:
+Run the project by doing:
 `java -jar build/libs/gs-test-rest-0.1.0.jar`
 
 If you have docker installed in your PC, you can run the project as shown below 
+
 `docker run --rm -v gradle-cache:/home/gradle/.gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle:jdk8-alpine gradle clean build && java -jar build/libs/gs-test-rest-0.1.0.jar`
 
 #### Run the tests

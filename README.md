@@ -7,6 +7,7 @@ Assuming that we have the project running already, we should go to:
 
 If we want to know which users are on the TOP 100 contributors of Barcelona, 
 sorting them by the number of repositories, then we can add query params as shown below:
+
 [http://localhost:8080/contributors?city=barcelona&size=100&sort=repos&order=desc](http://localhost:8080/contributors?city=barcelona&size=100&sort=repos&order=desc)
 
 

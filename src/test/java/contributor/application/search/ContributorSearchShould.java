@@ -13,39 +13,39 @@ import org.json.JSONObject;
 
 public class ContributorSearchShould {
 
-//    @Test
-//    public void return_json_object_when_valid_json_string_was_given() {
-//        JSONObject expectedJsonObject = new JSONObject("{\"valid\":{\"json\":\"response\"}}");
-//        HttpRequestMaker requestMaker = createRequestMakerStub(expectedJsonObject.toString());
-//
-//        JSONObject response = new RESTApiConsumer(requestMaker).get("someURL");
-//
-//        assertEquals(expectedJsonObject.toString(), response.toString());
-//    }
-//
-//    private HttpRequestMaker createRequestMakerStub(String response) {
-//        HttpRequestMaker requestMaker = mock(HttpRequestMaker.class);
-//
-//        when(requestMaker.get(anyString())).thenReturn(response);
-//
-//        return requestMaker;
-//    }
+    @Test
+    public void return_json_object_when_valid_json_string_was_given() {
+        JSONObject expectedJsonObject = new JSONObject("{\"valid\":{\"json\":\"response\"}}");
+        HttpRequestMaker requestMaker = createRequestMakerStub(expectedJsonObject.toString());
 
-//    @Test
-//    public void return_json_object_when_valid_json_string_was_given() {
-//        JSONObject expectedJsonObject = new JSONObject("{\"valid\":{\"json\":\"response\"}}");
-//        HttpRequestMaker requestMaker = createRequestMakerStub(expectedJsonObject.toString());
-//
-//        JSONObject response = new RESTApiConsumer(requestMaker).get("someURL");
-//
-//        assertEquals(expectedJsonObject.toString(), response.toString());
-//    }
-//
-//    private HttpRequestMaker createRequestMakerStub(String response) {
-//        HttpRequestMaker requestMaker = mock(HttpRequestMaker.class);
-//
-//        when(requestMaker.get(anyString())).thenReturn(response);
-//
-//        return requestMaker;
-//    }
+        JSONObject response = new RESTApiConsumer(requestMaker).get("someURL");
+
+        assertEquals(expectedJsonObject.toString(), response.toString());
+    }
+
+    private HttpRequestMaker createRequestMakerStub(String response) {
+        HttpRequestMaker requestMaker = mock(HttpRequestMaker.class);
+
+        when(requestMaker.get(anyString())).thenReturn(response);
+
+        return requestMaker;
+    }
+
+    @Test
+    public void return_json_object_when_valid_json_string_was_given() {
+        JSONObject expectedJsonObject = new JSONObject("{\"valid\":{\"json\":\"response\"}}");
+        HttpRequestMaker requestMaker = createRequestMakerStub(expectedJsonObject.toString());
+
+        JSONObject response = new RESTApiConsumer(requestMaker).get("someURL");
+
+        assertEquals(expectedJsonObject.toString(), response.toString());
+    }
+
+    private HttpRequestMaker createRequestMakerStub(String response) {
+        HttpRequestMaker requestMaker = mock(HttpRequestMaker.class);
+
+        when(requestMaker.get(anyString())).thenReturn(response);
+
+        return requestMaker;
+    }
 }
